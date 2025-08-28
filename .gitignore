@@ -8,3 +8,9 @@ wheels/
 
 # Virtual environments
 .venv
+
+# vscode settings
+.vscode/
+
+# mac file
+.DS_Store
