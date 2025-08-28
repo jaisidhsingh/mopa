@@ -4,8 +4,8 @@ from copy import deepcopy
 from time import perf_counter
 from dataclasses import dataclass
 
-from moes import *
-from fast_moes import *
+from models.moes import *
+from models.fast_moes import *
 
 
 @dataclass
