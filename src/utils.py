@@ -3,8 +3,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-def _round_to_4_decimals(list_of_floats):
-    return [round(item, 4) for item in list_of_floats]
+def _round_to_4_decimals(unrounded):
+    if not isinstance(unrounded, list):
+        unrounded = [unrounded]
+    return [round(item, 4) for item in unrounded]
 
 def _assert_no_nan(t, name): 
     assert torch.isfinite(t).all(), f"{name} contains NaN/Inf"

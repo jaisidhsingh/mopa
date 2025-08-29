@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from models.utils import _assert_no_nan, _round_to_4_decimals, FeedForwardExpert
+from src.utils import _assert_no_nan, _round_to_4_decimals, FeedForwardExpert
 
 
 class TopKMoE(nn.Module):
